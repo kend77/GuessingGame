@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Guessing Game</title>
+
+    <!-- Bootstrap and CSS here-->
+    <link rel ='stylesheet' type='text/css' href ='style.css'/>
+    <link rel ='stylesheet' type='text/css' href = 'bootstrap.css'/>
+
+  </head>
+  <body>
+
+      <div id='app' class='container center'>
+
+        <div id='headers'>
+          <!-- Title and subtitles! -->
+          <h1 id='title' class='center'>Play the Guessing Game!</h1>
+          <h3 id ='subtitle' class='center'>Guess a number between 1-100!</h3>
+        </div>
+
+        <div id='main'>
+          <div id='input-parent' class='center'>
+            <!-- Player's guess input, and submit button -->
+            <input id ='players-input' class ='center'
+            placeholder="#" maxlength='3' autofocus=autofocus></input>
+            <button id='submit' class='center btn btn-success'>Go!</button>
+          </div>
+
+          <div id='guesses'>
+            <!-- unordered list of guesses -->
+            <ul id='guesslist'>
+              <li class='guess'>-</li>
+              <li class='guess'>-</li>
+              <li class='guess'>-</li>
+              <li class='guess'>-</li>
+              <li class='guess'>-</li>
+            </ul>
+          </div>
+
+          <div id="menu-btns" class ='center'>
+            <!-- reset and hint buttons -->
+            <button id='reset' class='btn btn-warning'>Reset</button>
+            <button id='hint' class='btn btn-info'>Hint</button>
+          </div>
+        </div>
+      </div>
+
+
+
+    <div id='footer' class='center'>
+        <div class='row'>
+          <div class='col-sm-4'>
+            <img src='fa-logo@2x.png'></img>
+          </div>
+
+          <div class='col-sm-4'>
+            <h4>Project by Kenny Diaz</h4>
+          </div>
+
+          <div class='col-sm-4'>
+            <img src='grace_hopper_academy.png'></img>
+          </div>
+
+
+        </div>
+    </div>
+    <script src='jquery.js'></script>
+    <script src='../GuessingGame-Part2/GuessingGame.js'></script>
+  </body>
+</html>
